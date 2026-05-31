@@ -1,4 +1,1 @@
-const API_BASE_URL =
-  window.location.hostname === "localhost"
-    ? "http://localhost:5000"
-    : "https://your-render-backend.onrender.com";
+const API_BASE_URL = "https://boxverse-backend.onrender.com";
