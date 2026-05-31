@@ -1,75 +1,78 @@
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const Reward = require("./models/Reward");
 
-mongoose.connect("mongodb://127.0.0.1:27017/boxverse").then(async () => {
+mongoose.connect(process.env.MONGO_URI).then(async () => {
   await Reward.deleteMany();
 
   await Reward.insertMany([
     {
       category: "Gaming Box",
       title: "Gaming Sticker",
-      image: "./assets/gamingsticker.png",
+      image: "gamingsticker.png",
     },
     {
       category: "Gaming Box",
       title: "Mini Mouse Pad",
-      image: "./assets/MiniMouse.png",
+      image: "MiniMouse.png",
     },
 
     {
       category: "Anime Box",
       title: "Anime Poster",
-      image: "./assets/AnimePoster.png",
+      image: "AnimePoster.png",
     },
     {
       category: "Anime Box",
       title: "Anime Keychain",
-      image: "./assets/AnimeKeychain.png",
+      image: "AnimeKeychain.png",
     },
 
     {
       category: "Snacks Box",
       title: "Chocolate",
-      image: "./assets/Chocolate.png",
+      image: "Chocolate.png",
     },
     {
       category: "Snacks Box",
       title: "Candy",
-      image: "./assets/Candy.png",
+      image: "Candy.png",
     },
 
     {
       category: "Beauty Box",
       title: "Lip Balm",
-      image: "./assets/LipBalm.png",
+      image: "LipBalm.png",
     },
     {
       category: "Beauty Box",
       title: "Face Mask",
-      image: "./assets/FaceMask.png",
+      image: "FaceMask.png",
     },
 
     {
       category: "Stationery Box",
       title: "Notebook",
-      image: "./assets/Notebook.png",
+      image: "Notebook.png",
     },
     {
       category: "Stationery Box",
       title: "Pen",
-      image: "./assets/Pen.png",
+      image: "Pen.png",
     },
 
     {
       category: "Collection Box",
       title: "Rare Card",
-      image: "./assets/RareCard.png",
+      image: "RareCard.png",
     },
     {
       category: "Collection Box",
       title: "Collector Badge",
-      image: "./assets/CollectorBadge.png",
+      image: "CollectorBadge.png",
     },
   ]);
 

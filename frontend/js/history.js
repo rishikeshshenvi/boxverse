@@ -3,7 +3,7 @@ const historyContainer = document.getElementById("historyContainer");
 /* FETCH HISTORY */
 
 async function loadHistory() {
-  const response = await fetch("http://localhost:5000/api/history");
+  const response = await fetch(`${API_BASE_URL}/api/history`);
 
   const data = await response.json();
 

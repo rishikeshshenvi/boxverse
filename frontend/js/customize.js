@@ -106,7 +106,7 @@ document.getElementById("cartBtn").addEventListener("click", async () => {
   /* SAVE TO BACKEND */
 
   try {
-    await fetch("http://localhost:5000/api/cart/add-cart", {
+    await fetch(`${API_BASE_URL}/api/cart/add-cart`, {
       method: "POST",
 
       headers: {

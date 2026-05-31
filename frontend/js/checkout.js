@@ -46,12 +46,12 @@ payBtn.addEventListener("click", () => {
 
     /* GET SELECTED CART ITEM */
 
-    fetch(`http://localhost:5000/api/cart/${cartId}`)
+    fetch(`${API_BASE_URL}/api/cart/${cartId}`)
       .then((response) => response.json())
       .then((cartData) => {
         /* SAVE HISTORY */
 
-        fetch("http://localhost:5000/api/history/add-history", {
+        fetch(`${API_BASE_URL}/api/history/add-history`, {
           method: "POST",
 
           headers: {
@@ -77,7 +77,7 @@ payBtn.addEventListener("click", () => {
 
         /* REMOVE ITEM FROM CART */
 
-        fetch(`http://localhost:5000/api/cart/${cartId}`, {
+        fetch(`${API_BASE_URL}/api/cart/${cartId}`, {
           method: "DELETE",
         });
       });

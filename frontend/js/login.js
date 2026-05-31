@@ -12,7 +12,7 @@ signupForm.addEventListener("submit", async (e) => {
   const password = document.getElementById("signupPassword").value;
 
   try {
-    const response = await fetch("http://localhost:5000/api/auth/signup", {
+    const response = await fetch(`${API_BASE_URL}/api/auth/signup`, {
       method: "POST",
 
       headers: {
@@ -51,7 +51,7 @@ loginForm.addEventListener("submit", async (e) => {
   const password = document.getElementById("loginPassword").value;
 
   try {
-    const response = await fetch("http://localhost:5000/api/auth/login", {
+    const response = await fetch(`${API_BASE_URL}/api/auth/login`, {
       method: "POST",
 
       headers: {

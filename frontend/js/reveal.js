@@ -5,7 +5,7 @@ const boxArea = document.getElementById("boxArea");
 revealBtn.addEventListener("click", async () => {
   const category = localStorage.getItem("lastPurchasedCategory");
 
-  const response = await fetch(`http://localhost:5000/api/rewards/${category}`);
+  const response = await fetch(`${API_BASE_URL}/api/rewards/${category}`);
 
   const rewards = await response.json();
 
