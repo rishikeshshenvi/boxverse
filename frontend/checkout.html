@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Checkout</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
+  </head>
+
+  <body class="checkout-page">
+    <!--  NAVBAR  -->
+
+    <nav class="navbar simple-navbar sticky-top">
+      <div class="container-fluid">
+        <a href="cart.html" class="back-btn"> ← Back </a>
+      </div>
+    </nav>
+
+    <!--  CHECKOUT  -->
+
+    <div class="checkout-container">
+      <div class="checkout-box">
+        <h2 class="checkout-title">Checkout</h2>
+
+        <!-- NAME -->
+
+        <div class="form-section">
+          <label>Full Name</label>
+
+          <input type="text" id="nameInput" placeholder="Enter your name" />
+        </div>
+
+        <!-- ADDRESS -->
+
+        <div class="form-section">
+          <label>Address</label>
+
+          <textarea
+            id="addressInput"
+            placeholder="Enter your address"
+          ></textarea>
+        </div>
+
+        <!-- PAYMENT METHOD -->
+
+        <div class="form-section">
+          <label>Payment Method</label>
+
+          <div class="payment-options">
+            <label>
+              <input type="radio" name="payment" value="cod" checked />
+              Cash On Delivery
+            </label>
+
+            <label>
+              <input type="radio" name="payment" value="upi" />
+              UPI
+            </label>
+          </div>
+        </div>
+
+        <!-- UPI -->
+
+        <div id="upiBox" class="form-section upi-box">
+          <label>UPI ID</label>
+
+          <input type="text" placeholder="example@upi" />
+        </div>
+
+        <!-- BUTTON -->
+
+        <button id="payBtn" class="simple-btn-primary pay-btn">Pay Now</button>
+
+        <!-- POPUP -->
+        <div id="popupBox" class="popup-box">
+          <div class="popup-content">
+            <div id="popupLoader" class="popup-loader"></div>
+
+            <p id="popupText">Processing Payment...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/checkout.js"></script>
+  </body>
+</html>

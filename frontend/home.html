@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOX VERSE</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+  <body>
+    <!--  NAVBAR  -->
+    <nav
+      id="mainNavbar"
+      class="navbar navbar-expand-lg simple-navbar sticky-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand simple-brand" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="24"
+            fill="currentColor"
+            class="bi bi-box-seam d-inline-block align-text-top"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"
+            />
+          </svg>
+          BOX VERSE
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <a href="./cart.html" class="simple-btn-primary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="currentColor"
+              class="bi bi-cart3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+              />
+            </svg>
+            Cart
+          </a>
+          <a href="./history.html" class="simple-btn-outline">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="currentColor"
+              class="bi bi-collection"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5z"
+              />
+            </svg>
+            History
+          </a>
+          <a href="./index.html" class="simple-btn-logout">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="currentColor"
+              class="bi bi-box-arrow-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"
+              />
+            </svg>
+            Logout
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!--  CAROUSEL  -->
+    <div
+      id="myCarousel"
+      class="carousel slide section-space"
+      data-bs-ride="carousel"
+    >
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/1carousel.png" class="d-block w-100" />
+        </div>
+
+        <div class="carousel-item">
+          <img src="./assets/2carousel.png" class="d-block w-100" />
+        </div>
+
+        <div class="carousel-item">
+          <img src="./assets/3carousel.png" class="d-block w-100" />
+        </div>
+      </div>
+    </div>
+
+    <!--  BUTTON  -->
+    <div class="button-area section-space">
+      <button class="surprise-btn" onclick="scrollToCategories()">
+        🎁 Open Your Surprise Box
+      </button>
+    </div>
+
+    <!--  TITLE  -->
+    <h2 id="categories" class="section-title">Categories</h2>
+    <p class="section-subtitle">
+      Choose your mystery category and unlock exciting surprise items.
+    </p>
+
+    <!--  CATEGORIES  -->
+    <div class="simple-grid section-space">
+      <a href="box.html?id=1" class="simple-card">
+        <img src="./assets/Snacks.png" />
+        <h3>Snacks Box</h3>
+      </a>
+
+      <a href="box.html?id=2" class="simple-card">
+        <img src="./assets/Gaming.png" />
+        <h3>Gaming Box</h3>
+      </a>
+
+      <a href="box.html?id=3" class="simple-card">
+        <img src="./assets/Beauty.png" />
+        <h3>Beauty Box</h3>
+      </a>
+
+      <a href="box.html?id=4" class="simple-card">
+        <img src="./assets/Stationery.png" />
+        <h3>Stationery Box</h3>
+      </a>
+
+      <a href="box.html?id=5" class="simple-card">
+        <img src="./assets/Collection.png" />
+        <h3>Collection Box</h3>
+      </a>
+
+      <a href="box.html?id=6" class="simple-card">
+        <img src="./assets/AnimeBox.png" />
+        <h3>Anime Box</h3>
+      </a>
+    </div>
+
+    <!--  FOOTER  -->
+    <footer class="simple-footer">
+      <h3>BoxVerse</h3>
+
+      <p class="footer-text">
+        Discover exciting mystery boxes filled with surprises and rare
+        collectibles.
+      </p>
+
+      <div class="footer-links">
+        <a href="home.html">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="history.html">History</a>
+        <a href="cart.html">Cart</a>
+        <a href="index.html">Login</a>
+        <a href="index.html">Signup</a>
+      </div>
+
+      <p class="footer-copy">© 2026 BoxVerse. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      function scrollToCategories() {
+        document.getElementById("categories").scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    </script>
+  </body>
+</html>
